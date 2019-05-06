@@ -1,0 +1,25 @@
+If I am going to make a star trek inspired clock face, it should give me the option of displaying today's stardate.
+
+Date - Should be listed as day month year if set to earth, 2 settings possibilities.  
+	EARTH DAY dd.mm.yyyy or EARTH DAY mm.dd.yyyy
+		This could probably be done without an app-specific setting, and just use dd.mm.yyyy if set to metric/C, otherwise mm.dd.yyyy if us/F
+		
+	Otherwise display current date as TNG/DS9/VOY stardate - click to toggle. This should be a decimal value with no more than 2 places after the period.
+	STARDATE ######.## or STARDATE #####.##
+	Need to determine how to calculate stardate.
+	https://memory-alpha.fandom.com/wiki/Stardate
+	4#### 5 digit -> 24th century, so 2019 would be 1#### since we are in the 21st?
+	
+	Wiki states that the last 3 digits of a 5 digit stardate reset every year.  If this is the case, the largest digit increases as every year passes, and decreases as we go back in the calendar.
+		A Stardate is a five-digit number followed by a decimal point and one more digit. Example: "46254.7". The first two digits of the Stardate are "46." 
+			The 4 stands for the 24th Century, the 6 indicates sixth season. The following three digits will progress consecutively during the course of the season from 000 to 999. The digit following the decimal point counts tenths of a day. Stardate 45254.4, therefore, represents the noon hour on the 254th "day" of the fifth season.			
+	01.01.2364 = 41000.0, according to this wiki and every note available about the first season of TNG. 1000 units per year => 41 years before 2364 = 00000.0?
+	01.01.2323 -> stardate 00000.0?
+	This doesn't make much sense going backward on the calendar, but it does seem to work for all stardates in TNG, DS9, VOY, and the following (non-Abrams) movies.  All of TNG, DS9, VOY, and TNG movies count sequentially by adding +1 to the 2 largest digits in their stardates. The last TNG movie had a date of something like 56###.#  The problem is, stardate would reset every ~100 years.
+	2323-2019 = 304 years => stardate -304000.# for 01.01.2019?		
+	WHAT IF...since...
+	The first season of next-gen was 41###.#, and 41000 was the beginning of that year, maybe the REAL FULL stardate actually contains the century, but the shows always ignore/omit that largest digit. 
+	Maybe full stardates are actually 6 digits long.
+	41###.# -> 441###.# would keep first digit 4 as "24th century" but multiple decades can then be defined decimally ("41"), since "###" is 000-999 for each year. The shows ignoring the largest digit could be the
+	equivalent of our calendar being written as mm-dd-yy instead of mm-dd-yyyy.  The last TNG movie had a stardate of like 56###.#, but that "full" date could actually be 456###.#.
+	441000.0 (2364) - 441 years => This would put stardate 0 at roughly gregorian 1923... This, coincidentally, is the year "mathematical theory of relativity" is published. Chuck Yeager, Alan Shepard were also born this year.  These events are good enough for me to believe that 01.01.1923 is stardate 000000.0.
