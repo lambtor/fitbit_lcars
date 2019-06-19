@@ -9,6 +9,7 @@ http://www.lcarscom.net
 
 The font I used was pulled from www.lcarscom.net - swiss 911 ultra compressed
 
+data accents = half circle, basically
 header bars are same height as header text
 encapsulated text has 1/3 of font height as padding on bottom and triple the bottom's padding on top
 horizontal bars transition to vertical at a ratio of 1:0.3 or 1:3
