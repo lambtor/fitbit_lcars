@@ -25,7 +25,21 @@ Date - Should be listed as day month year if set to earth, 2 settings possibilit
 	441000.0 (2364) - 441 years => This would put stardate 0 at roughly gregorian 1923... This, coincidentally, is the year "mathematical theory of relativity" is published. Chuck Yeager, Alan Shepard were also born this year.  These events are good enough for me to believe that 01.01.1923 is stardate 000000.0.
 	
 //using 1.1.1923 as 0.0, this becomes:
-decimal decStardate = Math.Floor((decimal)DateTime.Now.DayOfYear * (decimal)1000.0 / (!DateTime.IsLeapYear(DateTime.Now.Year) ? (decimal)365 : (decimal)366));
-decimal decStarday = ((datetime.now.hour * 60) + datetime.now.minute) / 1440;
-decimal decStardate = ((current year - 1923) * 1000) + Convert.ToInt32(decStarday) + (Calculated decimal equivalent of current hour in day);			
-decimal decFullStardate = Math.floor(decStardate) + TruncateTo2Places(decStarday);
+export function ConvertToStardate(dtInput, bHideLargestDigit) {
+  var nDaysInCurrentYear = 365;
+  var nStardate = 0;
+  var dStarday = 0.0;
+  
+  if (IsLeapYear(dtInput)) {
+    nDaysInCurrentYear = 366;
+  }
+  
+  nStardate = Math.floor(GetDayOfYear(dtInput) * 1000 / nDaysInCurrentYear);
+	nStardate = (dtInput.getFullYear() - 1923) * 1000 + nStardate;
+  
+  dStarday = ((dtInput.getHours() * 60) + dtInput.getMinutes()) / 1440;
+  
+  //if "ignore largest stardate digit" selected, remove leading digit  
+  return (bHideLargestDigit) ? FixedTruncate(nStardate + dStarday, 2).substr(1) : FixedTruncate(nStardate + dStarday, 2);
+  //return FixedTruncate(nStardate + dStarday, 2).substr(1);
+}		
