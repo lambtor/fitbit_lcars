@@ -35,7 +35,7 @@ export function ConvertToStardate(dtInput, bHideLargestDigit) {
   }
   
   nStardate = Math.floor(GetDayOfYear(dtInput) * 1000 / nDaysInCurrentYear);
-	nStardate = (dtInput.getFullYear() - 1923) * 1000 + nStardate;
+  nStardate = (dtInput.getFullYear() - 1923) * 1000 + nStardate;
   
   dStarday = ((dtInput.getHours() * 60) + dtInput.getMinutes()) / 1440;
   
