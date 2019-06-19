@@ -23,3 +23,9 @@ Date - Should be listed as day month year if set to earth, 2 settings possibilit
 	41###.# -> 441###.# would keep first digit 4 as "24th century" but multiple decades can then be defined decimally ("41"), since "###" is 000-999 for each year. The shows ignoring the largest digit could be the
 	equivalent of our calendar being written as mm-dd-yy instead of mm-dd-yyyy.  The last TNG movie had a stardate of like 56###.#, but that "full" date could actually be 456###.#.
 	441000.0 (2364) - 441 years => This would put stardate 0 at roughly gregorian 1923... This, coincidentally, is the year "mathematical theory of relativity" is published. Chuck Yeager, Alan Shepard were also born this year.  These events are good enough for me to believe that 01.01.1923 is stardate 000000.0.
+	
+//using 1.1.1923 as 0.0, this becomes:
+decimal decStardate = Math.Floor((decimal)DateTime.Now.DayOfYear * (decimal)1000.0 / (!DateTime.IsLeapYear(DateTime.Now.Year) ? (decimal)365 : (decimal)366));
+decimal decStarday = ((datetime.now.hour * 60) + datetime.now.minute) / 1440;
+decimal decStardate = ((current year - 1923) * 1000) + Convert.ToInt32(decStarday) + (Calculated decimal equivalent of current hour in day);			
+decimal decFullStardate = Math.floor(decStardate) + TruncateTo2Places(decStarday);
