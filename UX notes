@@ -5,3 +5,14 @@ http://lcars.org.uk/lcars_a233.htm
 http://www.lcarscom.net
 
 The font I used was pulled from www.lcarscom.net - swiss 911 ultra compressed
+
+header bars are same height as header text
+encapsulated text has 1/3 of font height as padding on bottom and triple the bottom's padding on top
+horizontal bars transition to vertical at a ratio of 1:0.3 or 1:3
+
+encapsulated text: 1/3 the height of the text as bottom padding, 3x that value as top padding
+
+lcars curves
+	outside curve, use quarter circle created with diameter of widest part of 2 intersecting lines
+	inside curve, use quarter circle created with diameter of thinnest part of 2 intersecting lines
+4:1 ratio between thinner swoop bar and fatter one, but 3:1 also acceptable?
