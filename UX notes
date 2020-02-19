@@ -1,31 +1,28 @@
 next generation reference materials:
 1st officer's console panel
 http://lcars.org.uk/lcars_a233.htm
-
 http://lcars.org.uk/lcars_TNG_panels.htm
 
 voyager:
 http://lcars.org.uk/lcars_a118.htm
 http://lcars.org.uk/lcars_Voyager_panels.htm
 
-
 DS9:
 http://lcars.org.uk/lcars_DS9_panels.htm
 http://lcars.org.uk/lcars_a758.htm
-
 
 http://www.lcarscom.net
 
 The font I used was pulled from www.lcarscom.net - swiss 911 ultra compressed
 
-data accents = half circle, basically
+data accents = half circle, basically. been using a circle but cutting off the section where the pixels start to shrink after the widest part.
 header bars are same height as header text
 encapsulated text has 1/3 of font height as padding on bottom and triple the bottom's padding on top
-horizontal bars transition to vertical at a ratio of 1:0.3 or 1:3
+horizontal bars transition to vertical at a ratio of 1:0.3 or 1:3 or 1:4 or 1:0.25
 
 encapsulated text: 1/3 the height of the text as bottom padding, 3x that value as top padding
 
 lcars curves
 	outside curve, use quarter circle created with diameter of widest part of 2 intersecting lines
 	inside curve, use quarter circle created with diameter of thinnest part of 2 intersecting lines
-4:1 ratio between thinner swoop bar and fatter one, but 3:1 also acceptable?
+4:1 ratio between thinner swoop bar and fatter one, but 3:1 also acceptable. THESE ARE THE ONLY ACCEPTABLE RATIOS.
