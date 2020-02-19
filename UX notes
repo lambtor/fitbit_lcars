@@ -13,6 +13,8 @@ http://lcars.org.uk/lcars_a758.htm
 
 http://www.lcarscom.net
 
+Take screenshots of the flash module you want to use as inspiration, then pull the colors you want by getting their RGB / HTML codes via irfanview or whatever.
+
 The font I used was pulled from www.lcarscom.net - swiss 911 ultra compressed
 
 data accents = half circle, basically. been using a circle but cutting off the section where the pixels start to shrink after the widest part.
